@@ -1,0 +1,77 @@
+.cardUl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    animation: cardTrasition 3s ease-in-out infinite;
+}
+
+.cardUl li {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    align-content: center;
+    gap: 30px;
+    text-align: center;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+.cardUl img {
+    width: 100px;
+    background-size: cover;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.cardUl h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+
+.cardUl p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+
+.cardUl li::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-top: 1px solid transparent;
+}
+
+.cardUl li::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom: 1px solid transparent;
+}
+
+.cardUl li:hover::before{
+    width: 100%;
+    border-bottom: 1px solid #ff5d56;
+    transition: 0.5s ease-in-out;
+}
+
+.cardUl li:hover::after{
+    width: 100%;
+    border-bottom: 1px solid #ff5d56;
+    transition: 0.5s ease-in-out;
+}

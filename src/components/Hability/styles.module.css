@@ -1,0 +1,28 @@
+.Services {
+  background-color: #151515;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+
+.Services > h3 {
+  margin-top: 30px;
+  font-size: 2.5rem;
+  color: #ff5d56;
+  margin-bottom: 15px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.myServices {
+  padding: 60px;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  width: 100vw;
+}

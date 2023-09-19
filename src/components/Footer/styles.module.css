@@ -1,0 +1,28 @@
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.MainContainer > ul {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.MainContainer > ul > li {
+    list-style: none;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 1rem;
+    color: #c5bdbd;
+    background-color: #333;;
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+}

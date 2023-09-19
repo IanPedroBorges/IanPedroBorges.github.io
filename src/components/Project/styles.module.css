@@ -1,0 +1,34 @@
+.sobreTitulo {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .sobreTitulo h1 {
+    font-size: 2.5rem;
+    color: #ff5d56;
+    margin-bottom: 15px;
+    font-family: "Berkshire Swash", cursive;
+  }
+  
+  .sobreTitulo p {
+    color: #707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .sobreTitulo div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .sobreTitulo span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #dc3545;
+  }

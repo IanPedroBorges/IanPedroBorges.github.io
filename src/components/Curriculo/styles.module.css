@@ -1,0 +1,93 @@
+.Section{
+    display: grid;
+    background-color: #000;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+    animation: inicializar .7s forwards;
+}
+
+.Section div {
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap: 30px;
+}
+
+.Section div h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #f7f7f7;
+
+}
+
+.animation {
+    width: 0ch;
+    margin-top: -2rem;
+    border-right: 2px solid white;
+    animation: blinkCursor 500ms infinite normal, typing 4s steps(22) 1s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.Section div p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #f7f7f7;
+}
+
+.Section div a {
+    justify-self: start;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.Section img {
+    max-width: 100%;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: #fff;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 20ch;
+    }
+}
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media(max-width: 992px) {
+    .Section img {
+        display: none;
+    }
+
+    .Section {
+        background-image: url('../../images/eu.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,55 @@
+.MainContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainContainer > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.MainContainer > ul > li {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.MainContainer > ul > li > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.MainContainer > ul > li > ul {
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.MainContainer > ul > li > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.MainContainer > ul > li > ul > li > a{
+  color: #ff5d56;
+  font-size: max(10px, 0.4vw);
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Berkshire Swash", cursive;
+  }
